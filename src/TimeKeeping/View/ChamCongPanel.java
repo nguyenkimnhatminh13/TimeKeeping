@@ -212,8 +212,6 @@ public class ChamCongPanel extends javax.swing.JPanel {
     }
     
     private void info() {
-        
-        //Retrieve data from database
         new Thread() {
             @Override
             public void run() {

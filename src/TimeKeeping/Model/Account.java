@@ -25,7 +25,7 @@ public class Account {
     public Account(){}
     public boolean check()
     {
-        String sql="SELECT * FROM account WHERE username LIKE '"+this.username+ "' AND password LIKE '" +MD5.getMd5(this.password)+"'";
+        String sql="SELECT * FROM account WHERE username = '"+this.username+ "' AND password = '" +MD5.getMd5(this.password)+"'";
         System.out.println(sql);
         Connection cons= DBConnect.GetConnection();
         boolean c=false;
